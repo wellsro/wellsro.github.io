@@ -8,25 +8,25 @@
     </head>
     <body>
 
-        <!-- Wrap the top-level heading in a header element -->
+        <!-- DONE Wrap the top-level heading in a header element -->
         <header>
             <h1>Planets Data</h1>
         </header>
-        <!-- Add a main element to contain the table -->
-            <Main>
-            <!-- Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
-                <Table>
-                <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
-                    <caption>
-                        Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-                        </caption>
-                <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
+        <!-- DONE Add a main element to contain the table -->
+        <Main>
+        <!-- DONE Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
+            <Table>
+            <!-- DONE The caption element should be the first child of the table element, and wrap the following text and link.-->
+                <caption>
+                    Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+                    </caption>
+            <!-- DONE The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
                 <colgroup>
                     <col span="2">
                     <col style="border: 2px solid black">
                     <col span="9">
                 </colgroup>   
-                <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. --> 
+            <!-- DONE The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. --> 
                 <thead>
                     <tr>
                         <td colspan="2" title="EmptyColumnHeader"></td>
@@ -43,7 +43,7 @@
                         <th scope="col" title="Image">Image</th>
                     </tr>
                 </thead>
-                <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
+            <!-- DONE The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
                 <tbody>
                     <tr>
                         <th rowspan="4" colspan="2" scope="rowgroup">Terrestial planets</th>
@@ -69,7 +69,7 @@
                         <td>108.2</td>
                         <td>464</td>
                         <td>0</td>
-                        <td style=text-align:left; align="left"><Span style="color: #d3d3d3">No notes</Span></span></td>
+                        <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
                         <td><img src="images/venus.jpg"></td>
                     </tr>
                     <tr>
@@ -123,7 +123,7 @@
                         <td>1433.5</td>
                         <td>-140</td>
                         <td>62</td>
-                        <td style=text-align:left; align="left"><Span style="color: #d3d3d3">No notes</Span></span></td>
+                        <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
                         <td><img src="images/saturn.jpg"></td>
                     </tr>
                     <tr>
@@ -137,7 +137,7 @@
                         <td>2872.5</td>
                         <td>-195</td>
                         <td>27</td>
-                        <td style=text-align:left; align="left"><Span style="color: #d3d3d3">No notes</Span></span></td>
+                        <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
                         <td><img src="images/uranus.jpg"></td>
                     </tr>
                     <tr>
@@ -150,7 +150,7 @@
                         <td>4495.1</td>
                         <td>-200</td>
                         <td>14</td>
-                        <td style=text-align:left; align="left"><Span style="color: #d3d3d3">No notes</Span></span></td>
+                        <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
                         <td><img src="images/neptune.jpg"></td>
                     </tr>
                     <tr>
@@ -168,12 +168,15 @@
                         <td><img src="images/pluto.jpg"></td>
                     </tr>
                 </tbody>    
-                </Table>
-            </Main> 
+            </Table>
+        </Main> 
     </body>
-    <!-- Please note that you do NOT need to add a table footer for this assignment. -->
-    <!-- OK, but what if I want too? -->
+    <!-- NOT DONE Please note that you do NOT need to add a table footer for this assignment. -->
+    <!-- DONE OK, but what if I want too? -->
     <Footer>
-        <p align="right"><a>IT-248</a><br><a>rw v20220430:1824:0000</a></p>
+        <p style=text-align:right>
+            <a>IT-248</a><br>
+            <a>rw v20220430:2200:0000</a>
+        </p>
     </Footer>
 </html>
