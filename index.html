@@ -22,9 +22,18 @@
                     </caption>
             <!-- DONE The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
                 <colgroup>
-                    <col span="2">
-                    <col style="border: 2px solid black">
-                    <col span="9">
+                    <col span="2" title="EmptyColumnHeader">
+                    <col title="Name" style="border: 2px solid black">
+                    <col title="Mass">
+                    <col title="Diameter">
+                    <col title="Density">
+                    <col title="Gravity">
+                    <col title="LengthofDay">
+                    <col title="DistancefromtheSun">
+                    <col title="MeanTempature">
+                    <col title="NumberofMoons">
+                    <col title="Notes">
+                    <col title="Image">
                 </colgroup>   
             <!-- DONE The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. --> 
                 <thead>
@@ -57,7 +66,7 @@
                         <td>167</td>
                         <td>0</td>
                         <td>Closest to the Sun</td>
-                        <td><img src="images/mercury.jpg"></td>
+                        <td><img src="images/mercury.jpg" alt="Photo of Mercury"></td>
                     </tr>
                     <tr>
                         <th scope="row">Venus</th>
@@ -70,7 +79,7 @@
                         <td>464</td>
                         <td>0</td>
                         <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
-                        <td><img src="images/venus.jpg"></td>
+                        <td><img src="images/venus.jpg" alt="Photo of Venus"></td>
                     </tr>
                     <tr>
                         <th scope="row">Earth</th>
@@ -83,7 +92,7 @@
                         <td>15</td>
                         <td>1</td>
                         <td>Our world</td>
-                        <td><img src="images/earth.png"></td>
+                        <td><img src="images/earth.png" alt="Phot of Earth"></td>
                     </tr>
                     <tr>
                         <th scope="row">Mars</th>
@@ -96,7 +105,7 @@
                         <td>-65</td>
                         <td>2</td>
                         <td>The red planet</td>
-                        <td><img src="images/mars.jpg"></td>
+                        <td><img src="images/mars.jpg" alt="Photo of Mars"></td>
                     </tr>
                     <tr>
                         <th rowspan="4" scope="rowgroup">Jovian planets</th>
@@ -111,7 +120,7 @@
                         <td>-110</td>
                         <td>67</td>
                         <td>The largest planet</td>
-                        <td><img src="images/jupiter.jpg"></td>
+                        <td><img src="images/jupiter.jpg" alt="Photo of Jupiter"></td>
                     </tr>
                     <tr>
                         <th scope="row">Saturn</th>
@@ -124,7 +133,7 @@
                         <td>-140</td>
                         <td>62</td>
                         <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
-                        <td><img src="images/saturn.jpg"></td>
+                        <td><img src="images/saturn.jpg" alt="Photo of Saturn"></td>
                     </tr>
                     <tr>
                         <th rowspan="2" scope="rowgroup">Ice giants</th>
@@ -138,7 +147,7 @@
                         <td>-195</td>
                         <td>27</td>
                         <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
-                        <td><img src="images/uranus.jpg"></td>
+                        <td><img src="images/uranus.jpg" alt="Photo of Uranus"></td>
                     </tr>
                     <tr>
                         <th scope="row">Neptune</th>
@@ -151,7 +160,7 @@
                         <td>-200</td>
                         <td>14</td>
                         <td style=text-align:left><Span style="color: #d3d3d3">No notes</Span></span></td>
-                        <td><img src="images/neptune.jpg"></td>
+                        <td><img src="images/neptune.jpg" alt="Photo of Neptune"></td>
                     </tr>
                     <tr>
                         <th colspan="2" scope="rowgroup">Dwarf planets</th>
@@ -164,7 +173,7 @@
                         <td>5906.4</td>
                         <td>-225</td>
                         <td>5</td>
-                        <td>Declassified as a planet in 2006, but this <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+                        <td>Declassified as a planet in 2006, but this <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/" alt="Link to Pluto Planet USA Today story.">remains controversial</a>.</td>
                         <td><img src="images/pluto.jpg"></td>
                     </tr>
                 </tbody>    
