@@ -1,0 +1,15 @@
+ Volume in drive C is Windows
+ Volume Serial Number is EAD2-BFC9
+
+ Directory of C:\Users\wells\OneDrive\Documents\CWU-PC\Github\wellsro.github.io\school-site
+
+05/17/2022  10:18 PM    <DIR>          .
+05/17/2022  10:18 PM    <DIR>          ..
+05/17/2022  03:16 PM    <DIR>          css
+05/17/2022  03:16 PM    <DIR>          fonts
+05/17/2022  03:16 PM    <DIR>          images
+05/17/2022  04:37 PM             5,832 index.html
+04/21/2022  03:39 PM               944 page-error.html
+05/17/2022  10:18 PM               164 School_dir.txt
+               3 File(s)          6,940 bytes
+               5 Dir(s)  793,606,721,536 bytes free

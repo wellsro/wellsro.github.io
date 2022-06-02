@@ -1,0 +1,367 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* IMPORTED FONTS */
+
+@font-face {
+    font-family: 'latoregular';
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url(../fonts/sans-serif/montserrat-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensansregular';
+    src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'josefinslabregular';
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoslabregular';
+    src: url(../fonts/serif/robotoslab-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rozhaoneregular';
+    src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ultraregular';
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TYPOGRAPHY */
+
+p {
+    font-family: robtoregular, arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: latoregular, helvetica, sans-serif;
+    letter-spacing: 0.0325rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.0rem;
+    transform: rotate( 03deg);
+    text-align: center;
+    font-family: opensansregular, helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-shadow: #000 1px 1px;
+}
+
+.highlight {
+    display: inline-block;
+    font-family: Georgia, serif;
+    border: 1px solid black;
+    padding: .5rem .75rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #97A4A6;
+    background-color: #732C2C;
+    box-shadow: 5px 5px 4px -1px #888;
+    text-transform: uppercase;
+    font-stretch: ultra-expanded;
+    font-weight: bold;    
+}
+
+
+/* GENERAL SETUP AND DEFAULTS*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width: 90%;
+    min-width:56.25rem;
+}
+
+/* LAYOUT */
+
+header {
+    padding: 0.5rem 0rem 1rem 0rem;
+}
+
+
+nav {
+    margin-top: 3rem;
+    font-weight: bold;
+    
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1rem;
+    padding-top: 4rem;
+}
+
+article {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+aside {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    /*background-color: #D9D9D9;*/
+    padding: 2rem;
+    border-left: 1px solid #888;
+}
+
+aside h3 {
+    padding-left: .5rem;
+}
+aside p {
+    border-bottom: 1px solid #888;
+    padding-bottom: 0.5rem;
+    padding-left: .5rem;
+    font-family: montserratregular ;
+    font-size: .72rem;
+    margin-left: 0rem;
+}
+.expand {
+    font-size: 0.25rem;
+}
+
+.subsection {
+    display: flex;
+}
+
+footer {
+    font-size: .75rem;
+    /*
+    margin: 0rem auto;
+    width: 100%;
+    font-size: .75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0rem;
+    padding-top: 0rem;
+    text-align: left;
+    border-top: solid #000 1px;
+    border-left: solid #000 1px;
+    border-right: solid #000 1px;
+    border-bottom: solid #000 1px;*/
+}
+/*
+footer p {
+    margin: 0rem auto;
+    width: 100%;
+    display: grid;
+    font-size: .75rem;
+    text-align: right;
+    grid-gap: 0rem;
+    padding-top: 0rem;
+    margin: 0px;
+    border-top: solid #000 1px;
+    border-left: solid #000 1px;
+    border-right: solid #000 1px;
+    border-bottom: solid #000 1px;
+}
+
+.footer-right {
+    display: grid;
+    font-size: .75rem;
+    text-align: right;
+    float: right;
+    grid-row: 1;
+    grid-column: 2;
+    grid-gap: 0rem;
+    padding-top: 0rem;
+    margin: 0px;
+    border-top: solid #000 1px;
+    border-left: solid #000 1px;
+    border-right: solid #000 1px;
+    border-bottom: solid #000 1px;
+}
+*/
+.footer-right {
+    text-align:right;
+    
+}
+.copyright {
+    float: left;
+    text-align:left;
+    
+}
+
+time {
+    font-style: italic;
+    font-size: .70rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* IMAGES AND FIGURES */
+
+img {
+    width: 100%;    
+}
+
+figure {
+    margin: 0px;
+}
+
+.article-image {
+    width: 33%;
+    float: left;
+    padding: 0rem;
+    margin-right: 0.75rem;    
+}
+
+section, aside, nav, footer {
+    padding: .5rem;
+  }
+
+.subsection {
+    margin: 1rem 0rem;
+}
+
+.subsection figure {
+    background-color:beige;
+}
+
+.subsection figcaption {
+    padding: 0.25rem .025rem .025rem .25rem;
+}
+
+.subsection img {
+    max-width: 16%;
+    border:#000;
+    padding-right: 0px;
+    border-right: 0px;
+}
+
+button {
+    display: inline-block;
+    font-family: ultraregular, Georgia, serif;
+    border: 1px solid black;
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    color: #97A4A6;
+    background-color: #732C2C;
+    box-shadow: 5px 5px 4px -1px #888;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    font-size: 1.0125rem;
+    margin-top: 1rem;
+    margin-left: .5rem;    
+}
+
+/* LINKS AND NAVIGATION */
+
+a {
+    text-decoration: none;    
+}
+
+nav a {
+    display: inline-block;
+    padding: 1.25rem 1.25rem 2rem 2rem;
+    font-size: 1.5rem;
+    font-family: latoregular, arial, sans-serif;    
+    color: #2d3a85;
+}
+
+nav {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+
+.strikeout a {
+    text-decoration-line: line-through;
+    transform: rotate( -05deg);
+    color: #000;
+    text-transform: uppercase;
+}
+
+nav a:active {
+    color: #ffffff;
+    background-color: #000;
+}  
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #97A4A6;
+}  
+
