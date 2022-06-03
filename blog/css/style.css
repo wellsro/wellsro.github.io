@@ -163,11 +163,9 @@ header {
     padding: 0.5rem 0rem 1rem 0rem;
 }
 
-
 nav {
     margin-top: 3rem;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 
 .main-section {
@@ -205,66 +203,16 @@ aside p {
     font-size: 0.25rem;
 }
 
-.subsection {
-    display: flex;
-}
-
 footer {
-    font-size: .75rem;
-    /*
-    margin: 0rem auto;
-    width: 100%;
-    font-size: .75rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0rem;
-    padding-top: 0rem;
-    text-align: left;
-    border-top: solid #000 1px;
-    border-left: solid #000 1px;
-    border-right: solid #000 1px;
-    border-bottom: solid #000 1px;*/
-}
-/*
-footer p {
-    margin: 0rem auto;
-    width: 100%;
-    display: grid;
-    font-size: .75rem;
-    text-align: right;
-    grid-gap: 0rem;
-    padding-top: 0rem;
-    margin: 0px;
-    border-top: solid #000 1px;
-    border-left: solid #000 1px;
-    border-right: solid #000 1px;
-    border-bottom: solid #000 1px;
+    font-size: .75rem;    
 }
 
 .footer-right {
-    display: grid;
-    font-size: .75rem;
-    text-align: right;
-    float: right;
-    grid-row: 1;
-    grid-column: 2;
-    grid-gap: 0rem;
-    padding-top: 0rem;
-    margin: 0px;
-    border-top: solid #000 1px;
-    border-left: solid #000 1px;
-    border-right: solid #000 1px;
-    border-bottom: solid #000 1px;
-}
-*/
-.footer-right {
-    text-align:right;
-    
+    text-align:right;    
 }
 .copyright {
     float: left;
-    text-align:left;
-    
+    text-align:left;    
 }
 
 time {
@@ -284,7 +232,8 @@ figure {
 }
 
 .article-image {
-    width: 13%;
+    width: 25%; 
+    max-width: 33%;   
     float: left;
     padding: 0rem;
     margin-right: 0.75rem;    
@@ -292,25 +241,27 @@ figure {
 
 section, aside, nav, footer {
     padding: .5rem;
-  }
+}
 
 .subsection {
-    margin: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.subsection figure {
+.subsection-figure {
+    padding-top: 0rem;    
+    margin: 0rem;    
+}
+
+.subsection-figcaption {
     background-color:beige;
+    padding: 0.33rem 0.33rem 0.33rem 0.33rem;
+    margin: 0.33rem;
+    display: flexbox;  
 }
 
-.subsection figcaption {
-    padding: 0.25rem .025rem .025rem .25rem;
-}
-
-.subsection img {
-    max-width: 16%;
-    border:#000;
-    padding-right: 0px;
-    border-right: 0px;
+.subsection-figcaption img {
+    width: 16.3%;
 }
 
 button {
@@ -327,6 +278,10 @@ button {
     font-size: 1.0125rem;
     margin-top: 1rem;
     margin-left: .5rem;    
+}
+
+button a {
+    color: #97A4A6;
 }
 
 /* LINKS AND NAVIGATION */

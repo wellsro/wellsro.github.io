@@ -149,8 +149,11 @@ footer {
     padding: 1rem;
     border-top: 2rem solid #333;
     
+    
 }
 footer2 {
-    text-align: left;
+    float: right;
+    text-align: right;
     font-size: .6rem;
+    font-size: .75rem;
 }

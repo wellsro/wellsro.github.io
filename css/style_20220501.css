@@ -63,3 +63,18 @@ footer a {
   font-size:.75rem;
   color:darkblue;
 }
+footer {
+  font-size: .75rem;
+}
+
+.footer-right {
+  text-align:right;
+  font-size: .75rem;
+  
+}
+.copyright {
+  font-size: .75rem;
+  float: left;
+  text-align:left;
+  
+}

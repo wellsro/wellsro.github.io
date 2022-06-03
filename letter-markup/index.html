@@ -121,9 +121,14 @@
 
     </Body>
     <footer>
-        <p class="return"><a href="../">Home</p>
-            <p style=text-align:right>IT-248<br>
-            <a>rw v20220430:2300:0000</a>
+        <p class="return"><a href="../">Return to home</p>
+                <p class="footer-right">
+                    <a>V2022060:1200:0000</a>
+                    <p class="footer-right" id="date"></p>
+                    <script>
+                    document.getElementById("date").innerHTML = Date();
+                    </script>
+                    </p>
             </p>
     </footer>
 </html>
