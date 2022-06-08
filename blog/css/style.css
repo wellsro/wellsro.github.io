@@ -126,7 +126,7 @@ h1 {
 
 .highlight {
     display: inline-block;
-    font-family: Georgia, serif;
+    font-family: rozhaoneregular, Georgia, serif;
     border: 1px solid black;
     padding: .5rem .75rem;
     border-radius: 0.3rem;
@@ -210,6 +210,9 @@ footer {
 .footer-right {
     text-align:right;    
 }
+.footer-right img {
+    Width: 1rem;
+}
 .copyright {
     float: left;
     text-align:left;    
@@ -232,8 +235,7 @@ figure {
 }
 
 .article-image {
-    width: 25%; 
-    max-width: 33%;   
+    width: 33%; 
     float: left;
     padding: 0rem;
     margin-right: 0.75rem;    
